@@ -1,5 +1,10 @@
 @import "reset.css";
 
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --bg-main: #121212;
+}
+
 body {
   background: #000;
   color: #fff;
@@ -16,13 +21,13 @@ body {
 }
 
 .sidebar__navigation {
-  background-color: #121212;
+  background-color: var(--bg-main);
   border-radius: 8px;
   padding: 16px 0 0 16px;
 }
 
 .sidebar__navigation .logo {
-  background: #121212;
+  background-color: var(--bg-main);
   display: flex;
   border-radius: 8px;
   padding: 16px 0 0 16px;
@@ -46,7 +51,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--bg-main);
 }
 
 .library {
@@ -126,7 +131,7 @@ body {
 }
 
 .section-playlist__content .text{
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family);
   padding-bottom: 14px;
   color: #FFF;
 }
@@ -149,7 +154,7 @@ body {
   border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-family);
   text-decoration: none;
   text-transform: none;
   padding: 10px;
