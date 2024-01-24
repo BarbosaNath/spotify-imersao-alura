@@ -1,13 +1,7 @@
-@import "reset.css";
-
-:root {
-  --font-family: "DM Sans", sans-serif;
-  --bg-main: #121212;
-}
-
 body {
   background: #000;
-  color: #fff;
+  color: var(--fg-primary);
+  font-family: var(--font-dm-sans);
 }
 
 .sidebar {
@@ -47,11 +41,10 @@ body {
 }
 
 .sidebar nav ul li a {
-  color: #B3B3B3;
+  color: var(--fg-secondary);
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  font-family: var(--bg-main);
 }
 
 .library {
@@ -63,11 +56,11 @@ body {
   justify-content: space-between;
 
   padding: 4px 8px;
-  color: #B3B3B3;
+  color: var(--fg-secondary);
   font-weight: 600;
   font-size: 14px;
 
-  margin-top: 10p;
+  margin-top: 10px;
 }
 
 .library .library__content {
@@ -79,12 +72,11 @@ body {
   display: flex;
 
   margin-right: 10px;
-  color: #B3B3B3;
+  color: var(--fg-secondary);
   background-color: transparent;
   border: 0;
   font-size: 14px;
   font-weight: 700;
-  font-family: "DM Sans", sans-serif;
   text-align: center;
   text-decoration: none;
   text-transform: none;
@@ -117,7 +109,7 @@ body {
   background-color: #242424;
   border-radius: 10px;
 
-  color: #B3B3B3;
+  color: var(--fg-secondary);
   font-weight: 600;
   font-size: 14px;
   margin: 8px 0px;
@@ -131,9 +123,8 @@ body {
 }
 
 .section-playlist__content .text{
-  font-family: var(--font-family);
   padding-bottom: 14px;
-  color: #FFF;
+  color: var(--fg-primary);
 }
 
 .section-playlist__content .title{
@@ -149,12 +140,11 @@ body {
   display: flex;
   justify-content: center;
 
-  background-color: #fff;
+  background-color: var(--fg-primary);
   color: #000;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 700;
-  font-family: var(--font-family);
   text-decoration: none;
   text-transform: none;
   padding: 10px;
@@ -168,7 +158,7 @@ body {
 }
 
 .sidebar .cookies a {
-  color: #b3b3b3;
+  color: var(--fg-secondary);
   font-weight: 500;
   font-size: 10px;
   text-decoration: none;
@@ -183,7 +173,7 @@ body {
   text-transform: none;
   border: 1px solid #878787;
   background-color: transparent;
-  color: #fff;
+  color: var(--fg-primary);
   font-weight: bold;
   cursor: pointer;
   width: 170px;
