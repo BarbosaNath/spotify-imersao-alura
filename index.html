@@ -5,12 +5,24 @@
   <title>Spotify Imersão</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap"
+    rel="stylesheet">
+
+  <link href="src/styles/reset.css" rel="stylesheet">
+  <link href="src/styles/vars.css" rel="stylesheet">
   <link href="src/styles/sidebar-footer.css" rel="stylesheet">
+  <link href="src/styles/main-content.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css">
 </head>
 
 <body>
+  <!--------------------------------- SIDEBAR --------------------------------->
   <section class="sidebar">
     <nav class="sidebar__navigation">
       <div class="logo">
@@ -53,21 +65,49 @@
         </div>
       </section>
 
-        <div class="cookies">
-          <a href="">Cookies</a>
-        </div>
+      <div class="cookies">
+        <a href="">Cookies</a>
+      </div>
 
-        <div class="languages">
-          <button class="languages__button">
-            <span class="fa fa-globe"></span>
-            <span>Português do Brasil</span>
+      <div class="languages">
+        <button class="languages__button">
+          <span class="fa fa-globe"></span>
+          <span>Português do Brasil</span>
 
-          </button>
-        </div>
+        </button>
+      </div>
 
     </div>
   </section>
+  <!-------------------------------- /SIDEBAR --------------------------------->
 
+  <!---------------------------------- MAIN ----------------------------------->
+  <main class="main-container">
+    <nav class="header__navigation">
+      <div class="navigation">
+        <button class="arrow-left">
+          <img src="src/assets/icons/small-left.png" alt="Seta esquerda">
+        </button>
+
+        <button class="arrow-right">
+          <img src="src/assets/icons/small-right.png" alt="Seta direita">
+        </button>
+      </div>
+
+      <div class="header__search">
+        <img src="src/assets/icons/search.png" alt="">
+        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+      </div>
+
+      <div class="header__login">
+        <button class="subscribe">Inscreva-se</button>
+        <button class="login">Entrar</button>
+      </div>
+    </nav>
+  </main>
+  <!--------------------------------- /MAIN ----------------------------------->
+
+  <footer> <!-- TODO --> </footer>
 </body>
 
 </html>
