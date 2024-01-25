@@ -180,3 +180,48 @@ body {
   padding: 8px;
   border-radius: 20px;
 }
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  /* margin: 12px; */
+  padding: 11px 24px 7px 15px;
+  margin: 12px;
+  /* width: 100%; */
+
+  background: linear-gradient(90deg, #AF2896, #509BF5);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer__text .text {
+  line-height: 1.25rem;
+ flex-shrink: 0;
+}
+
+.footer .footer__text .title {
+  font-weight: 800;
+  font-size: 13.5px;
+}
+
+.footer .footer__text .subtitle {
+  font-weight: 500;
+  font-size: 15.2px;
+}
+
+.footer .footer__button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
