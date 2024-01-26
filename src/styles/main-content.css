@@ -91,3 +91,91 @@
   border: none;
   border-radius: 40px;
 }
+
+.main-container .sections {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--bg-main);
+
+  height: 68vh;
+  padding-top: 16px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.main-container .sections .sections__text {
+  margin: 24px;
+}
+
+.main-container .sections .title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.main-container .sections .subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-container .sections .sections__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: stretch;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  max-height: 43vh;
+  margin: 24px;
+  overflow-y: auto;
+}
+
+.main-container .sections .sections__card {
+  display: flex;
+
+  text-align: start;
+
+  width: 220px;
+  height: 200px;
+  color: var(--fg-primary);
+
+  font-size: 24px;
+  font-weight: 700;
+
+  border: none;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+
+  text-decoration: none;
+}
+.main-container .sections .sections__card span {
+  padding: 16px;
+}
+
+.main-container .sections .sections__card img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 107px;
+  transform: rotate(25deg) translate(18%, -2%);
+
+}
+
+.main-container .sections #sections__card1 { background-color: var(--card1); }
+.main-container .sections #sections__card2 { background-color: var(--card2); }
+.main-container .sections #sections__card3 { background-color: var(--card3); }
+.main-container .sections #sections__card4 { background-color: var(--card4); }
+.main-container .sections #sections__card5 { background-color: var(--card5); }
+.main-container .sections #sections__card6 { background-color: var(--card6); }
+.main-container .sections #sections__card7 { background-color: var(--card7); }
+.main-container .sections #sections__card8 { background-color: var(--card8); }
+.main-container .sections #sections__card9 { background-color: var(--card9); }
+.main-container .sections #sections__card10 { background-color: var(--card10); }
+.main-container .sections #sections__card11 { background-color: var(--card11); }
+.main-container .sections #sections__card12 { background-color: var(--card12); }
+.main-container .sections #sections__card13 { background-color: var(--card13); }
+.main-container .sections #sections__card14 { background-color: var(--card14); }
+.main-container .sections #sections__card15 { background-color: var(--card15); }
