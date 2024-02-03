@@ -3,6 +3,8 @@
   height: 100vh;
   margin-left: 320px;
   margin-right: 56px;
+
+  transition: 0.2s;
 }
 
 .header__navigation {
@@ -21,6 +23,9 @@
   align-items: center;
 }
 
+.header__navigation .navigation .logo {
+  display: none;
+}
 .header__navigation .navigation .arrow-left {
   margin-right: 1.25rem;
 }
@@ -39,6 +44,8 @@
   cursor: pointer;
 }
 
+.header__hamburger{display: none;}
+
 .header__login {
   display: flex;
   align-items: center;
@@ -49,6 +56,8 @@
   align-items: center;
   width: 364px;
   height: 48px;
+  min-width: 0;
+
   margin-left: 8px;
   background-color: #242424;
 
@@ -65,7 +74,7 @@
 .header__search input {
   background: transparent;
   border: none;
-  padding: 0px 100px 0 12px;
+  padding: 0px 30px 0 12px;
   color: var(--fg-primary);
   text-overflow: ellipsis;
   overflow: hidden;
@@ -121,7 +130,6 @@
 
 .main-container .sections .sections__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   justify-items: stretch;
   gap: 30px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -149,6 +157,8 @@
   overflow: hidden;
 
   text-decoration: none;
+
+  transition: 0.1s;
 }
 .main-container .sections .sections__card span {
   padding: 16px;
@@ -166,12 +176,14 @@
 
 /******************************************************************************/
 
-.grid-container {
+#result-artists.grid-container {
   margin: 12px;
   grid-gap: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   max-width: 80vw;
+
+  margin-bottom: 13vh;
 }
 
 .artist-card {
@@ -262,8 +274,8 @@
   cursor: pointer;
 }
 
-#result-artist {
-  padding: 20px 40px;
+#result-artists {
+  padding: 0px 4px;
 }
 /* FIM CARD ARTISTA */
 
@@ -284,6 +296,9 @@
 .main-container .sections #sections__card15 { background-color: var(--card15); }
 
 
-.hidden.hidden.hidden.hidden.hidden {
+#result-artists.hidden.hidden.hidden.hidden {
+  display: none;
+}
+.hidden.hidden.hidden.hidden.hidden.hidden {
   display: none;
 }
