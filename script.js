@@ -3,7 +3,7 @@ const resultArtist = document.getElementById("result-artists");
 const resultPlaylist = document.getElementById("result-playlist");
 
 function requestApi(searchInput) {
-  const url = `http://localhost:3000/artists?name_like=${searchInput}`;
+  const url = `https://api-spotify-artists.vercel.app/api/artists?name_like=${searchInput}`;
   fetch(url)
     .then((response) => response.json())
     .then((result) => displayResults(result));
